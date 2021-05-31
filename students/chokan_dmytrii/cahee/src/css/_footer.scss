@@ -1,0 +1,22 @@
+.footer {
+    padding: 14px 0 10px;
+    background-color: $mine-shaft;
+    color: $silver;
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__center {
+        text-align: center;
+    }
+
+    &__right {
+        text-align: right;
+
+        &-red {
+            color: $amaranth;
+        }
+    }
+}

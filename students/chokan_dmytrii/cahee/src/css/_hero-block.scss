@@ -1,0 +1,43 @@
+.hero-block {
+
+    @include bg-cover($bg-image);
+    padding: 360px 0 65px;
+
+    &__scroll-to {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.fresh-live {
+
+
+    &__title {
+        font-family: $font-third;
+        font-size: $font-third-size;
+        margin-bottom: 10px;
+    }
+
+    &__paragraph {
+        margin-bottom: 30px;
+    }
+
+
+    &__btn {
+        color: $color-white;
+        background-color: $outrageous-orange;
+        margin-bottom: 290px;
+    }
+}
+
+
+.scroll-to {
+    max-width: $default-gap*2;
+    position: relative;
+
+    &__link {}
+
+    &__link-img {
+        @include position-center;
+    }
+}

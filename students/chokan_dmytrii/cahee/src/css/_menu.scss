@@ -1,0 +1,110 @@
+$color-menu-item: $default-color-text;
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+
+    &__list {
+        display: flex;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background-color: $color-white;
+        }
+    }
+
+    &__item {
+        margin-left: 38px;
+
+        &:hover,
+        &_active {
+            .menu__link::before {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        color: $color-menu-item;
+        display: inline-block;
+        padding: 10px 3px;
+        position: relative;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            left: 0;
+            top: 0;
+            height: 3px;
+            background-color: $orange;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity .5s ease-in-out;
+        }
+
+        @media screen and (max-width: 768px) {
+            border-right: none;
+            border-bottom: 5px solid orange;
+            display: block;
+
+            &::after {
+                content: none;
+            }
+
+            &::before {
+                width: 3px;
+                height: auto;
+                top: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+.burger-btn {
+    border: 1px solid orange;
+    border-radius: 3px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__line {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: orange;
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: orange;
+            position: absolute;
+        }
+
+        &::before {
+            top: -8px;
+        }
+
+        &::before {
+            bottom: -8px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.block {}
+
+.about-us {
+
+    background-color: $robins-egg-blue;
+    color: $color-white;
+    padding: 30px 0 40px;
+    // .about-us__info
+
+    &__info {}
+}
+
+.info {
+
+    &__title {}
+
+
+    &__paragraph {}
+}

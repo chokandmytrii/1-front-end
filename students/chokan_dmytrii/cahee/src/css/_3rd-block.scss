@@ -1,0 +1,71 @@
+.block {}
+
+.our-services {
+    background-color: $malibu;
+    padding: 180px 0 150px;
+
+    // .our-services__info
+
+    &__info {
+        color: $color-white;
+    }
+
+    // .our-services__img
+
+    &__img {}
+}
+
+
+.features {
+
+    // .features__list
+
+    &__list {
+        list-style-type: none;
+    }
+
+    // .features__item
+
+    &__item {
+        padding: 40px 70px;
+        text-decoration: none;
+    }
+}
+
+.item {
+    text-decoration: none;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // .item__link
+
+    &__link {
+        // display: flex;
+        // flex-direction: row;
+        // align-items: center;
+    }
+
+    // .item__strong
+
+    &__strong {
+        padding: 40px 0;
+    }
+
+    &__svg {}
+}
+
+.block-right {
+    position: relative;
+
+    &__img {
+        position: absolute;
+        @include position-center;
+        z-index: 10;
+    }
+
+    &__title {
+        position: relative;
+        z-index: 20;
+    }
+}

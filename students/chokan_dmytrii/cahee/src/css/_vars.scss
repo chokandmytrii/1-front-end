@@ -1,0 +1,86 @@
+$alto: #ddd;
+$green: green;
+$color-white: white;
+$color-black: #000;
+$chambray: #3b5998;
+$cerulean: #00aced;
+$wedgewood: #517fa4;
+$rose: #ff0084;
+$grey: #bababa;
+$orange: #ff6033;
+$outrageous-orange: #FF6033;
+$robins-egg-blue: #00bcbc;
+$malibu: #70bfff;
+$bright-sun: #ffe92f;
+$horizon: #5585a2;
+$heliotrophe: #b07cf7;
+$red-orange: #f72b3b;
+$textarea-color: rgba($color: $robins-egg-blue, $alpha: 0.5);
+$chambray: #355B82;
+$mine-shaft: #262626;
+$silver: #B9B9B9;
+$amaranth: #f12b55;
+
+$input-border-color: $grey;
+$default-border: 1px solid $input-border-color;
+$default-border-radius: 5px;
+
+$facebook-color: $chambray;
+$twitter-color: $cerulean;
+$instagram-color: $wedgewood;
+$dribbble-color: $rose;
+
+
+$container-width: 1200px;
+$default-gap: 15px;
+
+$body-bg-color: $green;
+
+$fallback: Arial,
+Helvetica,
+sans-serif;
+
+$font-folder-path: '../fonts/';
+$folder-image: '../image/';
+$font-default-name: 'Raleway Light';
+$font-secondary-name: 'Raleway Bold';
+$font-third-name: 'Raleway Heavy';
+$font-logo-name: 'Pacifico';
+$font-secondary-path: 'raleway-v18-latin-700';
+$font-path: 'raleway-v18-latin-300';
+$font-third-path: 'raleway-v18-latin-900';
+$font-logo-path: 'pacifico-v17-latin-ext_latin-regular';
+
+$font-default: $font-default-name,
+$fallback;
+$font-secondary: $font-secondary-name,
+$fallback;
+$font-third: $font-third-name,
+$fallback;
+$font-logo: $font-logo-name,
+$fallback;
+
+$default-font-size: 17px;
+$font-logo-size: 25px;
+$font-secondary-size: 90px;
+$font-third-size: 60px;
+$default-color-text: $color-black;
+
+$bg-image: '../image/background1.png';
+$bg-image-2: '../image/img5.jpg';
+$bg-blog-1: '../image/img6-1.png';
+$bg-blog-2: '../image/img6-2.png';
+$bg-blog-3: '../image/img6-3.png';
+$bg-contact: '../image/background-contact.png';
+
+
+$breack-points: ("xl": 1200px,
+    "lg": 992px,
+    "md": 768px,
+    "sm": 576px);
+
+@mixin media($point) {
+    @media screen and (max-width: map-get($breack-points, $point)) {
+        @content;
+    }
+}

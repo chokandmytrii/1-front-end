@@ -1,0 +1,115 @@
+.block {}
+
+.contact {
+    padding: 100px 0 120px;
+    @include bg-cover($bg-contact);
+    // .contact__info
+
+    &__info {
+        max-width: 370px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+
+    &__inputs {
+        padding-left: 15px;
+    }
+
+    // .contact__inputs-form
+
+    &__inputs-form {}
+
+    // .contact__information
+
+    &__information {
+        padding-left: 85px;
+        // .contact__information_address
+
+        &_address {}
+
+        // .contact__information_email
+
+        &_email {}
+
+        // .contact__information_phone
+
+        &_phone {}
+    }
+}
+
+
+.info {
+
+    // .info__title
+
+    &__title {}
+
+    // .info__paragraph
+
+    &__paragraph {}
+}
+
+
+.form {
+
+    // .form__textarea
+
+    &__textarea {
+        display: block;
+        font-family: inherit;
+        outline: none;
+        resize: none;
+        font-size: $default-font-size;
+        max-width: 500px;
+        width: 100%;
+        line-height: 50px;
+        height: 50px;
+        background-color: $textarea-color;
+        border-color: $textarea-color;
+        color: $color-white;
+        border: none;
+        border-left: 5px solid transparent;
+        padding-left: $default-gap;
+        margin-bottom: $default-gap;
+
+        &:focus,
+        &:checked {
+            font-weight: bold;
+            background-color: $robins-egg-blue;
+            border-left: 5px solid $chambray;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+            height: 250px;
+        }
+
+        &::-webkit-input-placeholder {
+            color: white;
+        }
+
+        &:-moz-placeholder {
+            color: white;
+        }
+
+        &::-moz-placeholder {
+            color: white;
+        }
+
+        &:-ms-input-placeholder {
+            color: white;
+        }
+    }
+}
+
+.information-address,
+.information-email,
+.information-phone {
+    margin-bottom: 15px;
+    font-size: 20px;
+
+    &_title {
+        font-family: $font-secondary;
+    }
+}

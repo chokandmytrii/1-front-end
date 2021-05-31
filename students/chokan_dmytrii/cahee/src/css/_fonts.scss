@@ -1,0 +1,7 @@
+@include fonts($font-default-name, $font-path, 300);
+
+@include fonts($font-secondary-name, $font-secondary-path, 700);
+
+@include fonts($font-third-name, $font-third-path, 900);
+
+@include fonts($font-logo-name, $font-logo-path);

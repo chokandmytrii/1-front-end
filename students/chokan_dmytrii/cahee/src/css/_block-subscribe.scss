@@ -1,0 +1,52 @@
+.block {}
+
+.subscribe {
+    @include bg-cover($bg-image-2);
+    padding: 140px 0 160px;
+
+    &__wrapper {}
+
+    // .subscribe__message
+
+    &__title {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    &__message {
+        max-width: 570px;
+        margin-bottom: 30px;
+    }
+
+    // .subscribe__form
+
+    &__form {}
+
+    // .subscribe__form-group
+
+    &__form-group {
+        display: flex;
+        flex-direction: row;
+    }
+
+    // .subscribe__form-input
+
+    &__form-input {
+        display: block;
+        // width: 570px;
+    }
+
+    // .subscribe__form-submit
+
+    &__form-submit {
+        display: inline-block;
+    }
+}
+
+
+.page {
+
+    // .page__title
+
+    &__title {}
+}
