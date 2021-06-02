@@ -20,26 +20,36 @@
 
     // .subscribe__form
 
-    &__form {}
+    &__form {
+        display: flex;
+        align-items: center;
+    }
 
     // .subscribe__form-group
 
-    &__form-group {
-        display: flex;
-        flex-direction: row;
-    }
+    &__form-group {}
 
     // .subscribe__form-input
 
     &__form-input {
+        font-size: 15px;
+        padding: 22px 15px;
         display: block;
-        // width: 570px;
+        min-width: 570px;
+        width: 100%;
     }
 
     // .subscribe__form-submit
 
     &__form-submit {
         display: inline-block;
+        color: $color-white;
+        font-size: 20px;
+        padding: 20px 30px;
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        margin-left: $default-gap * 2;
+        background-color: $atlantis;
     }
 }
 

@@ -27,32 +27,64 @@
     // .features__item
 
     &__item {
-        padding: 40px 70px;
         text-decoration: none;
+        margin-bottom: 20px;
+
+        :last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
 .item {
-    text-decoration: none;
-    border: 1px solid black;
+    background-color: $color-white;
+    width: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    box-shadow: 0 4px 12px $color-black;
     // .item__link
 
     &__link {
-        // display: flex;
-        // flex-direction: row;
-        // align-items: center;
+        text-decoration: none;
+        display: block;
+        padding: 37px 30px;
+        width: 300px;
+        text-align: center;
+
+        &-high {
+            padding: 25px 30px;
+        }
+
+        &_svg {
+            width: 100px;
+            padding: 25px 0;
+            padding: 0 23px;
+
+            &::after {
+                display: block;
+                position: relative;
+                content: '';
+                height: 1px;
+                width: 98px;
+                background-color: $color-black;
+                transform: rotate(90deg);
+                right: 74px;
+                bottom: 30px;
+            }
+        }
     }
 
     // .item__strong
 
     &__strong {
-        padding: 40px 0;
+        font-family: $font-secondary;
+        color: $color-black;
     }
 
-    &__svg {}
+    &__svg {
+        width: 100%;
+    }
 }
 
 .block-right {
