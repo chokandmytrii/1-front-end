@@ -1,5 +1,11 @@
 $color-menu-item: $default-color-text;
 
+.header {
+    &__icon {
+        font-size: $font-logo-size*2;
+    }
+}
+
 .menu {
     display: flex;
     justify-content: flex-end;

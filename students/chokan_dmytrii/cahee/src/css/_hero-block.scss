@@ -1,10 +1,8 @@
 .hero-block {
-
     @include bg-cover($bg-image);
-    padding: 360px 0 65px;
+    padding: 290px 0 65px;
 
     &__scroll-to {
-        display: block;
         margin: 0 auto;
     }
 }
@@ -32,12 +30,11 @@
 
 
 .scroll-to {
-    max-width: $default-gap*2;
-    position: relative;
+    max-width: 24px;
 
     &__link {}
 
     &__link-img {
-        @include position-center;
+        display: block;
     }
 }
