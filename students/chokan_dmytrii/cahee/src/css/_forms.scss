@@ -1,0 +1,14 @@
+%form-elem {
+    border: $default-border;
+    border-radius: $default-border-radius;
+}
+
+.input {
+    @extend %form-elem;
+    height: 50px;
+}
+
+.textarea {
+    @extend %form-elem;
+    min-height: 160px;
+}

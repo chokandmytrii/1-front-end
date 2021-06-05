@@ -1,0 +1,63 @@
+@include grid * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    font-family: $font-default;
+    font-size: $default-font-size;
+    line-height: 1.4;
+    min-height: 100vh;
+    color: $default-color-text;
+
+    &__icon {
+        font-family: $font-logo;
+        font-size: $font-logo-size;
+    }
+
+    &__title {
+        font-family: $font-secondary;
+        font-size: $font-secondary-size;
+    }
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: $default-gap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 (-$default-gap);
+}
+
+[class^="col-"] {
+    padding: $default-gap;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.row-flex {
+    display: flex;
+    align-items: center;
+
+    &__item {}
+}
+
+.link-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 7px $color-black;
+}
