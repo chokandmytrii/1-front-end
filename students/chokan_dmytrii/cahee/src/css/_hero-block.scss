@@ -1,5 +1,6 @@
 .hero-block {
     @include bg-cover($bg-image);
+    background-origin: padding-box;
     padding: 290px 0 65px;
 
     &__scroll-to {
